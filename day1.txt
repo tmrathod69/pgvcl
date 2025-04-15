@@ -1,0 +1,137 @@
+FLUTTER DOCS - docs.flutter.dev
+Notes:
+Flutter is a framgework and Dart is the language to create Mobile App
+main.dart in lib folder of the project is the main file being executed
+Others are `imported` in supporting Dart files
+
+
+
+Dt 02/04/2025 TOPS - FLUTTER
+=============================
+ENABLE DEVELOPER OPTIONS AND USB DEBUGGING
+
+JAVA & KOTLIN - ANDROID
+SWIFT - IOS
+FLUTTER - FRAMEWORK - 3.16
+DART - LANGUAGE
+
+JAVA REQUIRED WHEN APP IS PUBLISHED VIA CI/CD - GITHUB ACTION
+
+sTATEFUL- DYNAMIC CHANGES
+STATELESS WIDGETS - STATIC INFO DIPSLAY
+
+Materialapp  - for whole application / project
+Scaffold - for each page of application
+
+Dt 03/04/2025 - day2
+================
+FLUTTRE THEMES
+WIDGET STYLING
+
+for testing
+amiresponsive website
+selenium IDE chrome ver 116 for scripting of a website
+Selenium WebDriver for Website
+Appium  and  Appium inspector for Mobile apps
+
+
+04/04/2025 day3
+================
+Material Design and cupertino widgets
+Materialapp() - compatible with android and ios
+cupertinoapp() - IOS Styling
+
+FloatingActionButton
+
+CURD operations
+
+05/04/2025 - day4
+======================
+Localization - l10n folder
+Internationalization - l18n folder
+Locals keyword
+intl package to be used in pubspec.yaml
+ARB(Application Resource Bundle)
+
+step 1: Create l10n folder inside lib folder
+
+step 2: add dependencies 
+intl: ^0.18.1
+  flutter_localizations:
+      sdk: flutter
+
+step 3:add under flutter
+  generate: true
+  assets:
+    - lib/l10n/
+
+step 4:
+create arb files inside l10n folder
+
+step 5:add intl_utils in dev_dependencies
+
+Step 6: flutter pub run intl_utils:generate - on FLUTTER TERMINAL
+
+DAY-5 - Asynchronous programming
+=================================
+Kotlin Version change - android->build_gradle
+dartpad - An application to write Dart Programms
+flutter ide - for Flutter programming
+to change APP ICON Use App Icon Generator website
+copy/paste icon image and Generate
+This will generate diffrent image formats folders 
+android for android
+Assets.xcassets for ios
+
+audioplayer - dependency for sound
+
+day-6 - Animation & Transitions
+================================
+Animation Controller & tween class
+Implicit & Explicit
+LottieFiles website for readymade animations in json format
+
+
+Day-7 - State management
+========================
+
+Riverpod/getx/bloc(Business LOgic Component) - are used for state management
+
+Day-8 - 10/04/2025 - Network and Offline Data Sync
+==================================================
+using  - SharedPreference
+  - cacjed_network_image dependency to store images in sharedpreference
+  debugShwwCheckModeBanner: flase - to remove debug mode strip
+
+Day-9 - 11/04/2025 - Plug-Ins
+=============================
+Write Custom Plug-in
+Quiz
+
+
+Day-10 - 12/04/2025 
+========================================
+Reducing App Size
+   - flutter build appbundle --release (if APK is more than 100MB)
+   - flutter build apk --release (will remove debug info and can be published to PlayStore)
+   - flutter build apk --release --split-per-abi (this will split the APK file according to different versions)
+
+
+Clean Architecture (SOLID, MVVM (Model View View Model))
+Debugging with Dart Dev tools
+
+decompiler.com - to reverse compiled APK
+
+day-11 - Web application
+==========================
+Flutter Web
+
+day-12 - publishing and CI/CD
+===============================
+CI- Continuous Integration
+CD - Continous deployment
+
+dependancy pubsspec.yaml - version: 1.0.0+1
+
+create folders in project as under
+  .github->workflows and create a file main.yml
